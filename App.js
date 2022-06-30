@@ -1,11 +1,32 @@
+/*import React from 'react';
+import {StatusBar, Text, View} from 'react-native';
+import Navigation from './src/Navigation/Navigation.jsx';
+import { AuthProvider } from './src/context/AuthContext';
+import 'react-native-gesture-handler';
+//import { registerRootComponent } from 'expo';
+
+
+//import {AuthProvider} from './src/context/AuthContext';
+
+const App = () => {
+  return (
+    <View>
+      <StatusBar backgroundColor="#06bcee" />
+      <Navigation />
+    </View>
+  );
+};
+
+//registerRootComponent(App);
+export default App;*/
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Navigation from './src/Navigation/Navigation';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Navigation/>
     </View>
   );
 }
@@ -18,3 +39,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
